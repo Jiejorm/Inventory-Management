@@ -1,6 +1,6 @@
 ﻿namespace Inventory_Management
 {
-    partial class Customer_Button
+    partial class CustomerButton
     {
         /// <summary> 
         /// Required designer variable.
@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Component Designer generated code
+         #region Component Designer generated code
 
         /// <summary> 
         /// Required method for Designer support - do not modify 
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
+            
         }
 
         #endregion

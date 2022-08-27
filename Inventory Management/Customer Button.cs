@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Inventory_Management
 {
-    public partial class Customer_Button : UserControl
+    public partial class CustomerButton : UserControl
     {
-        public Customer_Button()
+        public CustomerButton()
         {
             InitializeComponent();
         }
@@ -28,11 +28,20 @@ namespace Inventory_Management
         public Image ImageHover
         {
             get { return HoverImage; }
-            set
-            {
-                NormalImage = value;
-            }
+            set {  NormalImage = value; }
 
+        }
+
+        public Image Image { get; private set; }
+
+        private void Customer_MouseHover(object sender, EventArgs e)
+        {
+            this.Image = HoverImage;
+        }
+
+        private void Customer_Button_MouseLeave(object sender, EventArgs e)
+        {
+            this.Image = NormalImage;
         }
     }
 }
