@@ -16,5 +16,19 @@ namespace Inventory_Management
         {
             InitializeComponent();
         }
+
+
+        private void checkBoxPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxPass.Checked == false)
+                txtPass.UseSystemPasswordChar = true;
+            else 
+                txtPass.UseSystemPasswordChar = false;
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
