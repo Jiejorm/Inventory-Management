@@ -1,6 +1,6 @@
 ﻿namespace Inventory_Management
 {
-    partial class Login
+    partial class LoginForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,27 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxClose = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PictureBox = new System.Windows.Forms.PictureBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblClear = new System.Windows.Forms.Label();
+            this.checkBoxPass = new System.Windows.Forms.CheckBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Chartreuse;
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.pictureBoxClose);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -57,16 +59,17 @@
             this.panel1.Size = new System.Drawing.Size(574, 123);
             this.panel1.TabIndex = 0;
             // 
-            // pictureBox3
+            // pictureBoxClose
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(531, 5);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(31, 22);
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxClose.BackColor = System.Drawing.Color.White;
+            this.pictureBoxClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBoxClose.BackgroundImage")));
+            this.pictureBoxClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxClose.Location = new System.Drawing.Point(531, 5);
+            this.pictureBoxClose.Name = "pictureBoxClose";
+            this.pictureBoxClose.Size = new System.Drawing.Size(31, 22);
+            this.pictureBoxClose.TabIndex = 12;
+            this.pictureBoxClose.TabStop = false;
+            this.pictureBoxClose.Click += new System.EventHandler(this.pictureBoxClose_Click);
             // 
             // pictureBox2
             // 
@@ -79,24 +82,25 @@
             this.pictureBox2.TabIndex = 7;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // PictureBox
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(200, 150);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(147, 127);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.PictureBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PictureBox.BackgroundImage")));
+            this.PictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PictureBox.Location = new System.Drawing.Point(200, 150);
+            this.PictureBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Size = new System.Drawing.Size(147, 127);
+            this.PictureBox.TabIndex = 1;
+            this.PictureBox.TabStop = false;
+            this.PictureBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Location = new System.Drawing.Point(159, 377);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(257, 31);
-            this.textBox1.TabIndex = 2;
+            this.txtName.Location = new System.Drawing.Point(159, 377);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(257, 31);
+            this.txtName.TabIndex = 2;
             // 
             // label1
             // 
@@ -111,31 +115,33 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(159, 448);
+            this.label2.Location = new System.Drawing.Point(159, 419);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "Password";
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(159, 478);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(257, 31);
-            this.textBox2.TabIndex = 4;
+            this.txtPass.Location = new System.Drawing.Point(159, 449);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(257, 31);
+            this.txtPass.TabIndex = 4;
+            this.txtPass.Text = "ddsdsd";
+            this.txtPass.UseSystemPasswordChar = true;
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.GreenYellow;
-            this.button1.Location = new System.Drawing.Point(183, 568);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 38);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Sign In";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnLogin.BackColor = System.Drawing.Color.Lime;
+            this.btnLogin.Location = new System.Drawing.Point(200, 561);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(190, 38);
+            this.btnLogin.TabIndex = 6;
+            this.btnLogin.Text = "Sign In";
+            this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // label3
             // 
@@ -147,29 +153,53 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "LOGIN HERE";
             // 
-            // Login
+            // lblClear
+            // 
+            this.lblClear.AutoSize = true;
+            this.lblClear.Location = new System.Drawing.Point(159, 508);
+            this.lblClear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblClear.Name = "lblClear";
+            this.lblClear.Size = new System.Drawing.Size(48, 25);
+            this.lblClear.TabIndex = 8;
+            this.lblClear.Text = "clear";
+            this.lblClear.Click += new System.EventHandler(this.lblClear_Click);
+            // 
+            // checkBoxPass
+            // 
+            this.checkBoxPass.AutoSize = true;
+            this.checkBoxPass.Location = new System.Drawing.Point(296, 504);
+            this.checkBoxPass.Name = "checkBoxPass";
+            this.checkBoxPass.Size = new System.Drawing.Size(164, 29);
+            this.checkBoxPass.TabIndex = 9;
+            this.checkBoxPass.Text = "Show password";
+            this.checkBoxPass.UseVisualStyleBackColor = true;
+            this.checkBoxPass.CheckedChanged += new System.EventHandler(this.checkBoxPass_CheckedChanged_1);
+            // 
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(574, 750);
+            this.Controls.Add(this.checkBoxPass);
+            this.Controls.Add(this.lblClear);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtPass);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.PictureBox);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Login";
+            this.Name = "LoginForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,14 +208,16 @@
         #endregion
 
         private Panel panel1;
-        private PictureBox pictureBox1;
-        private TextBox textBox1;
+        private PictureBox PictureBox;
+        private TextBox txtName;
         private Label label1;
         private Label label2;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox txtPass;
+        private Button btnLogin;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private PictureBox pictureBoxClose;
         private Label label3;
+        private Label lblClear;
+        private CheckBox checkBoxPass;
     }
 }
