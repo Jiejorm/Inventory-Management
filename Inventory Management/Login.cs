@@ -55,5 +55,12 @@ namespace Inventory_Management
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
     }
 }

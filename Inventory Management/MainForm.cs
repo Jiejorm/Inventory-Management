@@ -16,20 +16,52 @@ namespace Inventory_Management
         {
             InitializeComponent();
         }
-
-        private void Form1_Load(object sender, EventArgs e)
+        //to show subform form in mainform
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
         {
-
+            
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
 
+        
+
+        
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Exit Application", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox7_Click(object sender, EventArgs e)
         {
+            LoginForm ls = new LoginForm();
+            ls.Show();
+            this.Hide();
+        }
 
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Categoryform cf = new Categoryform();
+            cf.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            UserForm uf = new UserForm();
+            uf.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Salesform sf = new Salesform();
+            sf.Show();
+            this.Hide();
         }
     }
 }
