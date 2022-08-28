@@ -41,5 +41,19 @@ namespace Inventory_Management
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            CategoryModule cm = new CategoryModule();
+            cm.Show();
+            this.Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            MainForm mf = new MainForm();
+            mf.Show();
+            this.Hide();
+        }
     }
 }
