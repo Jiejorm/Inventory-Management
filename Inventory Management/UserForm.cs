@@ -49,6 +49,9 @@ namespace Inventory_Management
             usermodule.ShowDialog();
         }
 
-        
+        private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -109,7 +109,7 @@
             this.dgvUser.RowTemplate.Height = 25;
             this.dgvUser.Size = new System.Drawing.Size(1143, 750);
             this.dgvUser.TabIndex = 2;
-           
+            this.dgvUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvUser_CellContentClick);
             // 
             // Column1
             // 

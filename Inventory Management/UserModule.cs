@@ -14,7 +14,7 @@ namespace Inventory_Management
     public partial class UserModule : Form
     {
 
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Eric Jiejorm Akpalu\OneDrive - University of Ghana\Documents\dbMS.mdf"";Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\Eric Jiejorm Akpalu\source\repos\Inventory Management\DBMS.mdf"";Integrated Security=True;Connect Timeout=30");
         SqlCommand cm = new SqlCommand();
         public UserModule()
         {
@@ -30,7 +30,7 @@ namespace Inventory_Management
         {
             try
             {
-                if (MessageBox.Show("Are you sure you want to save this user?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Are you sure you want to save this user?", "Saving Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cm = new SqlCommand("INSERT INTO tbUser(username,fullname,password,phone)VALUES(@username,@fullname,@password,@phone)", con);
                     cm.Parameters.AddWithValue("@username", txtUserName.Text);
@@ -51,22 +51,6 @@ namespace Inventory_Management
             }
         }
 
-        private void btnClear_Click(object sender, EventArgs e)
-        {
-            Clear();
-        }
-        public void Clear()
-        {
-            txtUserName.Clear();
-            txtFullName.Clear();
-            txtPass.Clear();
-            txtPhone.Clear();
-        }
-
-        private void UserModule_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -81,6 +65,24 @@ namespace Inventory_Management
             MainForm mf = new MainForm();
             mf.Show();
             this.Hide();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            Clear();
+        }
+
+        public void Clear()
+        {
+            txtUserName.Clear();
+            txtFullName.Clear();
+            txtPass.Clear();
+            txtPhone.Clear();
+        }
+
+        private void txtUserName_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
