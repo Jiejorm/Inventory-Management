@@ -84,5 +84,29 @@ namespace Inventory_Management
         {
 
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (MessageBox.Show("Are you sure you want to update this user?", "Update Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    cm = new SqlCommand("UPDATE SET tbUser username=@username, fullname=@fullname, password=@password, phone=@phone WHERE username LIKE '" + txtUserName.Text + "' ", con);
+                    cm.Parameters.AddWithValue("@fullname", txtFullName.Text);
+                    cm.Parameters.AddWithValue("@password", txtPass.Text);
+                    cm.Parameters.AddWithValue("@phone", txtPhone.Text);
+                    con.Open();
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("User has been successfully updated!");
+                    this.Dispose();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

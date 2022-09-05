@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSales.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALkAAADMCAYAAAAvQgIuAAAABGdBTUEAALGPC/xhBQAAEw5JREFUeF7t
         nQ2QJkV5xy+mjMagSTRqjGgwkJiAktItWHZn3vUUFSy0QCtgoeInKoIYiKIhSIiC+JGAIMkFhKrgEWNA
@@ -145,7 +145,7 @@
         V7/AV5RWWbPm/wAkcdOG24unhgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnUser.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPoAAACyCAYAAABr59I8AAAABGdBTUEAALGPC/xhBQAAE35JREFUeF7t
         nQu0HVV5x+MCllqhImq1pYosg6JYEAIJ58w+l6sRqQ8qgtD6QKCtSlGoUJc8FI0RoaAgxiIPQ4BKIitq
@@ -234,7 +234,7 @@
         9f8AVz8OSKYmYKIAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnCategory.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJUAAACrCAYAAABv0t6SAAAABGdBTUEAALGPC/xhBQAABAZJREFUeF7t
         3f9NE2EAxvGO4AiO4J9GrgkjuIGM4AYyghvIBrrA3esGsAFsgBvovdfDYHkDveP5A+znSb6JsdeSlk/6
@@ -713,7 +713,7 @@
         q9X6/yun/gsooIu/AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnProducts.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAALUAAADaCAYAAADg8QMmAAAABGdBTUEAALGPC/xhBQAABtlJREFUeF7t
         3fFR20gUx3GXkBJSQv7MBDNHB6SDSwdJB6SDpINzB3ED8l4HSQemA6eD3HvLYzjMAra1krU/fd/MZ3I5

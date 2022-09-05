@@ -47,11 +47,39 @@ namespace Inventory_Management
             usermodule.btnSave.Enabled = true;
             usermodule.btnUpdate.Enabled = false;
             usermodule.ShowDialog();
+            LoadUser();
         }
 
         private void dgvUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            string colName = dgvUser.Columns[e.ColumnIndex].Name;
+            if (colName == "Edit")
+            {
+                UserModule userModule = new UserModule();
+                userModule.txtUserName.Text = dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString();
+                userModule.txtFullName.Text = dgvUser.Rows[e.RowIndex].Cells[2].Value.ToString();
+                userModule.txtPass.Text = dgvUser.Rows[e.RowIndex].Cells[3].Value.ToString();
+                userModule.txtPhone.Text = dgvUser.Rows[e.RowIndex].Cells[4].Value.ToString();
 
+
+                userModule.btnSave.Enabled = false;
+                userModule.btnUpdate.Enabled = true;
+                userModule.txtUserName.Enabled = false;
+                userModule.ShowDialog();
+
+            }
+            else if ( colName == "Delete")
+            {
+                if(MessageBox.Show("Are you sure you want to delete this user?", "Delete Record", MessageBoxButtons.YesNo,MessageBoxIcon.Question)== DialogResult.Yes)
+                {
+                    con.Open();
+                    cm = new SqlCommand("DELETE FROM tbUser WHERE username LIKE '" + dgvUser.Rows[e.RowIndex].Cells[1].Value.ToString() + "'", con);
+                    cm.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Record has successfully deleted!");
+                }
+            } LoadUser();
+            
         }
     }
 }

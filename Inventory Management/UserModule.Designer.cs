@@ -187,6 +187,7 @@
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // UserModule
             // 
@@ -221,12 +222,8 @@
 
         private Panel panel1;
         private Label label1;
-        private TextBox txtUserName;
-        private TextBox txtFullName;
         private Label label2;
-        private TextBox txtPass;
         private Label label3;
-        private TextBox txtPhone;
         private Label label4;
         private PictureBox pictureBoxClose;
         private EventHandler txtFullName_TextChanged;
@@ -237,6 +234,10 @@
         public Button btnUpdate;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
+        public TextBox txtUserName;
+        public TextBox txtFullName;
+        public TextBox txtPass;
+        public TextBox txtPhone;
 
         public EventHandler UserForm_Load { get; private set; }
     }

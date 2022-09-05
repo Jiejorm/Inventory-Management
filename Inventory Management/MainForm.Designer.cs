@@ -35,24 +35,24 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnSales = new System.Windows.Forms.PictureBox();
+            this.btnUser = new System.Windows.Forms.PictureBox();
+            this.btnCategory = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnProducts = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSales)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProducts)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
@@ -65,12 +65,12 @@
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.pictureBox6);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.btnSales);
+            this.panel1.Controls.Add(this.btnUser);
+            this.panel1.Controls.Add(this.btnCategory);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnProducts);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -130,41 +130,41 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "Products";
             // 
-            // pictureBox6
+            // btnSales
             // 
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(1005, 35);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(50, 63);
-            this.pictureBox6.TabIndex = 14;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.btnSales.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSales.BackgroundImage")));
+            this.btnSales.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSales.Location = new System.Drawing.Point(1005, 35);
+            this.btnSales.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSales.Name = "btnSales";
+            this.btnSales.Size = new System.Drawing.Size(50, 63);
+            this.btnSales.TabIndex = 14;
+            this.btnSales.TabStop = false;
+            this.btnSales.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
-            // pictureBox5
+            // btnUser
             // 
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(854, 35);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(50, 63);
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.btnUser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUser.BackgroundImage")));
+            this.btnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUser.Location = new System.Drawing.Point(854, 35);
+            this.btnUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(50, 63);
+            this.btnUser.TabIndex = 13;
+            this.btnUser.TabStop = false;
+            this.btnUser.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // pictureBox4
+            // btnCategory
             // 
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(707, 35);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(50, 63);
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.btnCategory.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCategory.BackgroundImage")));
+            this.btnCategory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCategory.Location = new System.Drawing.Point(707, 35);
+            this.btnCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(50, 63);
+            this.btnCategory.TabIndex = 12;
+            this.btnCategory.TabStop = false;
+            this.btnCategory.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -188,16 +188,16 @@
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // btnProducts
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(551, 35);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 63);
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.btnProducts.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnProducts.BackgroundImage")));
+            this.btnProducts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnProducts.Location = new System.Drawing.Point(551, 35);
+            this.btnProducts.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnProducts.Name = "btnProducts";
+            this.btnProducts.Size = new System.Drawing.Size(50, 63);
+            this.btnProducts.TabIndex = 9;
+            this.btnProducts.TabStop = false;
             // 
             // label1
             // 
@@ -223,6 +223,16 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1143, 77);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Consolas", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(934, 17);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 26);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Log out";
+            // 
             // pictureBox7
             // 
             this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
@@ -242,16 +252,7 @@
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(1143, 515);
             this.panelMain.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Consolas", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(934, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 26);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Log out";
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
             // MainForm
             // 
@@ -267,12 +268,12 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnSales)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCategory)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnProducts)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
@@ -286,16 +287,16 @@
         private Panel flowLayoutPanel1;
         private Label label1;
         private Panel panelMain;
-        private PictureBox pictureBox1;
+        private PictureBox btnProducts;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Label label5;
         private Label label4;
         private Label label3;
         private Label label2;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox4;
+        private PictureBox btnSales;
+        private PictureBox btnUser;
+        private PictureBox btnCategory;
         private Label label6;
         private PictureBox pictureBox7;
         private Label label7;
