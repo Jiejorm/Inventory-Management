@@ -1,6 +1,6 @@
 ﻿namespace Inventory_Management
 {
-    partial class CategoryModule
+    partial class UserModule
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblCatId = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,7 +56,6 @@
             this.label5.Size = new System.Drawing.Size(240, 33);
             this.label5.TabIndex = 12;
             this.label5.Text = "Category Module";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // btnUpdate
             // 
@@ -67,6 +66,7 @@
             this.btnUpdate.TabIndex = 23;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnClear
             // 
@@ -109,22 +109,22 @@
             this.panel1.Size = new System.Drawing.Size(666, 64);
             this.panel1.TabIndex = 12;
             // 
-            // label2
+            // lblCatId
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 191);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 25);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Category Id";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblCatId.AutoSize = true;
+            this.lblCatId.Location = new System.Drawing.Point(51, 191);
+            this.lblCatId.Name = "lblCatId";
+            this.lblCatId.Size = new System.Drawing.Size(105, 25);
+            this.lblCatId.TabIndex = 24;
+            this.lblCatId.Text = "Category Id";
+            this.lblCatId.Click += new System.EventHandler(this.lblCatId_Click);
             // 
             // CategoryModule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(666, 282);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblCatId);
             this.Controls.Add(this.catName);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnClear);
@@ -147,6 +147,9 @@
         private Label label5;
         private Label label1;
         private Panel panel1;
-        private Label label2;
+        private Label lblCatId;
+        public Button btnUpdate;
+        public Button btnClear;
+        public Button btnSave;
     }
 }

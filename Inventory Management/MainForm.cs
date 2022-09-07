@@ -36,37 +36,34 @@ namespace Inventory_Management
             }
         }
 
-        private void pictureBox7_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-            LoginForm ls = new LoginForm();
-            ls.Show();
-            this.Hide();
+            openChildForm(new LoginForm());
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void btnCategory_Click(object sender, EventArgs e)
         {
-            Categoryform cf = new Categoryform();
-            cf.Show();
-            this.Hide();
+            openChildForm(new Categoryform());
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void btnUser_Click(object sender, EventArgs e)
         {
-            UserForm uf = new UserForm();
-            uf.Show();
-            this.Hide();
+            openChildForm(new UserForm());
         }
 
-        private void pictureBox6_Click(object sender, EventArgs e)
+        private void btnSales_Click(object sender, EventArgs e)
         {
-            Salesform sf = new Salesform();
-            sf.Show();
-            this.Hide();
+            openChildForm(new Salesform());
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Productsforms());
         }
     }
 }

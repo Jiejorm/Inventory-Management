@@ -191,6 +191,7 @@
         private DataGridViewImageColumn Column5;
         private DataGridViewImageColumn Column6;
         private PictureBox btnAdd;
+        private readonly DataGridViewCellEventHandler dgvUser_CellContentClick;
 
         public EventHandler label1_Click { get; private set; }
         public EventHandler pictureBox1_Click { get; private set; }

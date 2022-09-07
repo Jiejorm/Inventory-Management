@@ -20,7 +20,8 @@ namespace Inventory_Management
         public Categoryform()
         {
             InitializeComponent();
-            
+            LoadCategory();
+
         }
 
         public void LoadCategory()
@@ -63,11 +64,9 @@ namespace Inventory_Management
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            CategoryModule cm = new CategoryModule();
-            cm.Show();
-            this.Hide();
+
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -75,6 +74,15 @@ namespace Inventory_Management
             MainForm mf = new MainForm();
             mf.Show();
             this.Hide();
+        }
+
+        private void dgvCategory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string colName = dgvCategory.Columns[e.ColumnIndex].Name;
+            if (colName == "Edit")
+            {
+
+            }
         }
     }
 }

@@ -44,7 +44,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.btnLogout = new System.Windows.Forms.PictureBox();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnSales)).BeginInit();
@@ -54,7 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnProducts)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -140,7 +140,7 @@
             this.btnSales.Size = new System.Drawing.Size(50, 63);
             this.btnSales.TabIndex = 14;
             this.btnSales.TabStop = false;
-            this.btnSales.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.btnSales.Click += new System.EventHandler(this.btnSales_Click);
             // 
             // btnUser
             // 
@@ -152,7 +152,7 @@
             this.btnUser.Size = new System.Drawing.Size(50, 63);
             this.btnUser.TabIndex = 13;
             this.btnUser.TabStop = false;
-            this.btnUser.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // btnCategory
             // 
@@ -164,7 +164,7 @@
             this.btnCategory.Size = new System.Drawing.Size(50, 63);
             this.btnCategory.TabIndex = 12;
             this.btnCategory.TabStop = false;
-            this.btnCategory.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // pictureBox3
             // 
@@ -198,6 +198,7 @@
             this.btnProducts.Size = new System.Drawing.Size(50, 63);
             this.btnProducts.TabIndex = 9;
             this.btnProducts.TabStop = false;
+            this.btnProducts.Click += new System.EventHandler(this.btnProducts_Click);
             // 
             // label1
             // 
@@ -215,7 +216,7 @@
             // 
             this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.flowLayoutPanel1.Controls.Add(this.label7);
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox7);
+            this.flowLayoutPanel1.Controls.Add(this.btnLogout);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 673);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -233,16 +234,16 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Log out";
             // 
-            // pictureBox7
+            // btnLogout
             // 
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(1036, 8);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(72, 45);
-            this.pictureBox7.TabIndex = 0;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            this.btnLogout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogout.BackgroundImage")));
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogout.Location = new System.Drawing.Point(1036, 8);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(72, 45);
+            this.btnLogout.TabIndex = 0;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panelMain
             // 
@@ -276,7 +277,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnProducts)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -298,7 +299,7 @@
         private PictureBox btnUser;
         private PictureBox btnCategory;
         private Label label6;
-        private PictureBox pictureBox7;
+        private PictureBox btnLogout;
         private Label label7;
     }
 }
