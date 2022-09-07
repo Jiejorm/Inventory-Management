@@ -43,7 +43,13 @@ namespace Inventory_Management
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-           
+            UserForm uf = new UserForm();
+            uf.btnSave
+        }
+
+        private void dgvUser_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+               
         }
     }
 }

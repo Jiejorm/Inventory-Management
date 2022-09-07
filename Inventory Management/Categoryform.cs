@@ -39,42 +39,7 @@ namespace Inventory_Management
             dr.Close();
             con.Close();
         }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            MainForm mf = new MainForm();
-            mf.Show();
-            this.Hide();
-        }
+        
 
         private void dgvCategory_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
