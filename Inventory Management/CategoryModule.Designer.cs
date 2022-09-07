@@ -145,9 +145,6 @@
 
         private TextBox catName;
         private Label label5;
-        private Button btnUpdate;
-        private Button btnClear;
-        private Button btnSave;
         private Label label1;
         private Panel panel1;
         private Label label2;
